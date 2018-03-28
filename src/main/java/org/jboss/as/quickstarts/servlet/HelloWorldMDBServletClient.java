@@ -55,7 +55,7 @@ public class HelloWorldMDBServletClient extends HttpServlet {
 
     private static final int MSG_COUNT = 5;
 
-    @Resource(mappedName = "java:/ConnectionFactory")
+    @Resource(mappedName = "java:/RemoteConnectionFactory")
     private ConnectionFactory connectionFactory;
 
     @Resource(mappedName = "java:/queue/HELLOWORLDMDBQueue")
